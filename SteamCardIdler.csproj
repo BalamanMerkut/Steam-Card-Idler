@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\tray.ico</ApplicationIcon>
+    <Title>Steam Card Idler</Title>
+    <Company>Alejandev</Company>
+    <Product>Steam Card Idler</Product>
+    <Version>1.0.0</Version>
+    <NoWarn>NU1701</NoWarn>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_backups\**" />
+    <EmbeddedResource Remove="_backups\**" />
+    <None Remove="_backups\**" />
+    <Page Remove="_backups\**" />
+    <Compile Remove="Backups\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SteamAuth" Version="3.0.0" />
+    <PackageReference Include="SteamKit2" Version="3.4.0" />
+    <PackageReference Include="WPF-UI" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tray.ico" />
+  </ItemGroup>
+
+</Project>
