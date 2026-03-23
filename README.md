@@ -1,3 +1,4 @@
+This version for developers if u want to download user version check releases.
 # 🎮 Steam Card Idler
 
 A WPF desktop application for automating Steam trading card farming and playtime boosting. Built with C# / .NET 8 and SteamKit2.
